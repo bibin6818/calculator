@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container" class="mt-5 d-flex justify-content-center align-items-center flex-column">
+        <div class="box">
+            <input id="calcScreen" type="text" placeholder="0" class="input-box">
+            <div class="buttons">
+                <button id="ac" class="ac" onclick="clearAllContent()" >AC</button>
+                <button id="seven"  onclick="displayContent('7')">7</button>
+                <button id="eight" onclick="displayContent('8')">8</button>
+                <button id="nine" onclick="displayContent('9')">9</button>
+                <button  onclick="displayContent('+')">+</button>
+                <button id="four" onclick="displayContent('4')">4</button>
+                <button id="five" onclick="displayContent('5')">5</button>
+                <button id="six" onclick="displayContent('6')">6</button>
+                <button  onclick="displayContent('-')">-</button>
+                <button id="one" onclick="displayContent('1')">1</button>
+                <button id="two" onclick="displayContent('2')">2</button>
+                <button id="three" onclick="displayContent('3')">3</button>
+                <button  onclick="displayContent('*')"> *</button>
+                <button id="zero" onclick="displayContent('0')">0</button>
+                <button  onclick="displayContent('/')">/</button>
+                <button id="equal" class="opt" onclick="showResult()">=</button>
+
+                <button id="backspace" class="bckspc" onclick="removeLast()"  >←</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="./main.js">  </script>
+</html>
